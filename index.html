@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Login Screen</title>
+
+  <!-- CSS -->
+  <link href="Styles/style.css"
+        rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/016d819f40.js"
+          crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="login-img-container">
+        <img src="/Images/account.svg"
+             class="login-img"
+             alt="Login image">
+      </div>
+      <div class="login-container">
+        <form action="index.html">
+          <div class="avatar-container">
+            <img src="/Images/avatar.svg"
+                 class="avatar-img"
+                 alt="Avatar image">
+          </div>
+          <h1>Welcome</h1>
+          <div class="input-container">
+            <div class="input-container-icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="input-container-content">
+              <label for="username"
+                     id="username-label">Username</label>
+              <input type="text"
+                     id="username"
+                     class="input"
+                     required
+                     title="Please enter your username">
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-container-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="input-container-content">
+              <label for="password"
+                     id="password-label">Password</label>
+              <input type="text"
+                     id="password"
+                     class="input"
+                     required
+                     title="Please enter your password">
+            </div>
+          </div>
+
+          <a href="#">Forgot Password?</a>
+          <input type="submit"
+                 class="btn"
+                 value="Login">
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- End of main -->
+
+  <!-- Script -->
+  <script src="Scripts/script.js"></script>
+</body>
+
+</html>
