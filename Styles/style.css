@@ -16,7 +16,7 @@
   --off-white-color: #f1faee;
   --very-light-color: #a8dadc;
   --light-blue-color: #457b9d;
-  --dark-blue-color:#1d3557;
+  --dark-blue-color: #1d3557;
   --grey-color: #999;
   --light-grey-color: #d9d9d9;
   --mobile-grey-color: rgba(107, 106, 106, 0.6);
@@ -32,7 +32,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('/Images/wave.svg');
+  background-image: url('https://raw.githubusercontent.com/DKBeaton/LoginPage/3b3a87a84731b775e9e6649b7bc0590acdf70fb0/Images/wave.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -60,7 +60,7 @@ main {
   text-align: center;
 }
 
-form{
+form {
   width: 350px;
 }
 
@@ -99,7 +99,8 @@ h1 {
 }
 
 /* Create the underline when the element is focused */
-.input-container::after, .input-container::before {
+.input-container::after,
+.input-container::before {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -119,7 +120,8 @@ h1 {
 }
 
 /* When the underline is focused, expand the line */
-.input-container.focus::after, .input-container.focus::before {
+.input-container.focus::after,
+.input-container.focus::before {
   width: 50%;
 }
 
@@ -133,7 +135,7 @@ h1 {
 }
 
 .input-icon-container i {
-  color: var(--mobile-grey-color); 
+  color: var(--mobile-grey-color);
   transition: 0.3s;
 }
 
@@ -147,7 +149,7 @@ label {
   left: 0;
   padding: 0 0.7rem;
   font-size: 1.1rem;
-  color: var(--mobile-grey-color); 
+  color: var(--mobile-grey-color);
   transition: 0.3s;
 }
 
@@ -175,8 +177,11 @@ a {
   font-size: 0.9rem;
   text-align: right;
   text-decoration: none;
-  outline: none;
   transition: 0.3s;
+}
+
+a:focus {
+  outline: 1px solid var(--dark-blue-color);
 }
 
 a:hover {
@@ -190,7 +195,6 @@ a:hover {
   border-radius: 25px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   border: none;
-  outline: none;
   font-size: 1.1rem;
   margin: 2rem 0;
   background-color: var(--very-light-color);
@@ -200,6 +204,11 @@ a:hover {
   font-weight: 600;
   font-family: var(--main-font);
   transition: all 0.3s ease 0s;
+}
+
+.btn:focus {
+  outline: 1px solid var(--dark-blue-color);
+  outline-offset: 2px;
 }
 
 .btn:hover {
@@ -212,15 +221,12 @@ a:hover {
 /* Media Queries */
 
 @media screen and (min-width: 800px) {
-
   main {
     background-size: initial;
   }
-
 }
 
 @media screen and (min-width: 890px) {
-
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -249,5 +255,4 @@ a:hover {
   a {
     color: var(--grey-color);
   }
-
 }
